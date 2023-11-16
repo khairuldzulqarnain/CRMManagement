@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="602,3570" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main " sap:VirtualizedContainerService.HintSize="568,3505.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_nazattdi" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_nazattdi]" DisplayName="Read Range naza ttdi leads" sap:VirtualizedContainerService.HintSize="506,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="NOV" WorkbookPath="Leads Naza ttdi.xlsx" />
+    <ui:LogMessage DisplayName="Log Message naza ttdi leads" sap:VirtualizedContainerService.HintSize="506,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[dt_nazattdi]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Register Your Interest naza ttdi" sap:VirtualizedContainerService.HintSize="506,3082" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do leads" sap:VirtualizedContainerService.HintSize="472,2862.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_nazattdi]" DisplayName="For Each Row Naza TTDI" sap:VirtualizedContainerService.HintSize="410,2746.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,2556.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Text="[CurrentRow(&quot;Name&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="62, 499, 258, 37" CvType="InputBox" DesignTimeRectangle="64, 501, 255, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT strName'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strName' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strName' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="7933bc44-9730-4a9d-a707-e4cdcb7d4dea" InformativeScreenshot="8ded4f3394437c8ef2eda003c31d804d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="61, 723, 259, 36" CvType="InputBox" DesignTimeRectangle="64, 725, 255, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT strEmail'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strEmail' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strEmail' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="a8f20ed5-ebd6-487d-ac05-a7639356fa48" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAkCAYAAACND1/xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEOSURBVHhe7dSxbcJQGIVRL8BkDMIGSKzBBBTMQEXFDPQUeAY6+498ZUXBkJKI4HOkK6THk2h4X1M8aNu2NptNPv9K3/d1OBxqsVjUcrms6/U6fvMZzudzbbfbut1u4wnvRgx+Mfxpd7tdXS6X8eR1ht9arVbVNM3d9vv9eON/Ox6PdTqdquu68YR3JAZAPMRgvV6b2Qw2dReDZxeAzzR9798xEAKYn5/vXgxgxsQACDEAQgyAEAMgxAAIMQBCDIAQAyDEAAgxAEIMgBADIMQACDEAQgyAEAMgxAAIMQBCDIAQAyDEAAgxAEIMgBADIMQACDEA4mkMBoIA8zF973cxGAwXzOzzN/UQA2COqr4A6M+EDaqs824AAAAASUVORK5CYII=" InformativeScreenshot="ea89ab876c67a12f9835ef42a89c5593.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Phone Number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="61, 797, 259, 36" CvType="InputBox" DesignTimeRectangle="64, 799, 255, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT strMobile'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strMobile' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strMobile' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="49fc4db0-ce43-4440-86df-ff4d6a360ce4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAkCAYAAACND1/xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAERSURBVHhe7dSxiQJRGIXRacNyrMYOLMI61MDM2Cq0A2FSUzFQ/8XLsKyjoS7onAMXhjcvfV9TvMXlcqnlclmLxSLf/2W/39d4PK7RaFSbzaau12v35/O1bVuz2awOh0N3wiuJwZttt9tarVZ1Pp+7k/eZz+fVNM3dJpNJHY/H7sbn2u12tV6v63Q6dSe8mhgA8RCD6XRqZgNY310Mnl0AvlP/vf/GQAhgeP6+ezGAARMDIMQACDEAQgyAEAMgxAAIMQBCDIAQAyDEAAgxAEIMgBADIMQACDEAQgyAEAMgxAAIMQBCDIAQAyDEAAgxAEIMgBADIMQAiKcxuBEEGI7+e7+Lwc3tgpl9//oeYgAMUdUPEvSELqEHt2sAAAAASUVORK5CYII=" InformativeScreenshot="842fda54649088c752e5c1b568bcaa27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Postcode" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Text="[CurrentRow(&quot;Postcode&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="62, 571, 258, 36" CvType="InputBox" DesignTimeRectangle="64, 573, 255, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT strPostcode'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strPostcode' tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strPostcode' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="9f633644-b826-40ca-8e0d-325d76aa5198" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAkCAYAAACND1/xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAESSURBVHhe7dSxiQJRGIXRacNyrMYOLMI61MDM2Cq0A8HUVAzUf/EyLOsobrSLOufAheHNS9/XFC/hfD7XfD6v2WyW7/+y3W5rOBzWYDCo1WpVl8ul/fP+drtdTSaT2u/37QnPiMGLWa/XtVgs6nQ6tSd/ZzqdVtM0NxuNRnU4HNob72uz2dRyuazj8die8BsxAOIuBuPx2Mx6sK6bGDy6AHym7nv/joEQQP/8fPdiAD0mBkCIARBiAIQYACEGQIgBEGIAhBgAIQZAiAEQYgCEGAAhBkCIARBiAIQYACEGQIgBEGIAhBgAIQZAiAEQYgCEGAAhBkCIARAPY3AlCNAf3fd+E4Or6wUz+/x13cUA6KOqL1k/hC7oxchyAAAAAElFTkSuQmCC" InformativeScreenshot="4ab54efd5dfe9c1daecee852db18704e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Project" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Text="[CurrentRow(&quot;Project&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="61, 713, 259, 36" CvType="InputBox" DesignTimeRectangle="64, 715, 255, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT strProject'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strProject' tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strProject' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="074f613a-7434-49df-b789-dcc56df6b88d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAkCAYAAACND1/xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFNSURBVHhe7dQ/jgFhGMBhF9C4gANxCApxA4lrqJQKZ1CpRKsRvYJWJxrh3cybyWax3f6xa54neTPJN28yzXy/WjzZ8XiMXq8X7XY7VqtVHA6H6HQ6sVwuy43/b7/fx3A4zOdvuV6vMZvNol6vR6vVit1uV755DZvNJkajUZxOp/KEr3p6DM7nc4zH42g2m9FoNKLb7cZ6vS7fvo7ip51MJrHdbsuTn1N8q9/vR61Wu5npdFpu/G/z+TwWi0VcLpfyhO/w9BgAf8NDDAaDgTGmAnPvJgafLQCv6f6+v8dACKB6Pt57MYAKEwMgiQGQxABIYgAkMQCSGABJDIAkBkASAyCJAZDEAEhiACQxAJIYAEkMgCQGQBIDIIkBkMQASGIAJDEAkhgASQyAJAZAEgMgiQGQPo1BQRCgOu7v+00MCsWCMeb1595DDIAqingDq8pzoogB5JYAAAAASUVORK5CYII=" InformativeScreenshot="95e53c1dbee7ec9ed40552d6750c89a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Appoitment Time" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="AM" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="2">
+                          <x:String>AM</x:String>
+                          <x:String>PM</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvTextArea="67, 526, 33, 19" CvTextArgument="AM" CvType="Text" DesignTimeRectangle="64, 524, 65, 26" DesignTimeScaleFactor="1.5" ElementType="DropDown" FriendlyName="'AM'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strTimeSlot' tableRow='5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strTimeSlot' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="9e1bcd08-7788-4555-b323-6f8b0f0fe777" ImageBase64="" InformativeScreenshot="26ff370fc8786f660c9a7fd92a33875f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="56, 489, 1805, 68" FriendlyName="'Appointment (required)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Appointment (required)                     ' check:innerText='Appointment (required)&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;AM&amp;#xD;&amp;#xA;PM' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABxEAAABICAYAAAA51wtGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAABGySURBVHhe7d29axt5/sBx/RkqrjjfbRPYIu7i8gxbxLDFz7DFGrYI5opgtjhMDoLZJogtgi4Hi9kiiC0W5GJBKQLe4kBuAnZx4BQLThFQ4ALngxQqUqhI8fnNo6PRg9dyFGezer1giDUazYM0qd58v1MLAAAAAAAAgCEiIgAAAAAAAFAhIgIAAAAAAAAVIiIAAAAAAABQISICAAAAAAAAFSIiAAAAAAAAUCEiAgAAAAAAABUiIgAAAAAAAFAhIgIAAAAAAAAVIiIAAAAAAABQISICAAAAAAAAFSIiAAAAAAAAUCEiAgAAAAAAABUiIgAAAAAAAFAhIgIAAAAAAAAVImIM4vj+atTrq9H896BYx2X1f+lE8/vD6BevPx4f8D5404+Tn5ux8Wk9Gkf5qv5RK5o/nSRnBQAAAAAAcPXmEhEHR43Y+KFXvPrYiIjzMYiTH7Zj+7H7YBaDX9rRuLsZK7Va1JKljIipwbNWbP61FSevixUAAAAAAABXZA4RsR+dW7WoXW/GcbFmoT1vRWsoBH10Lnn+vb2NWH/4sQbED20Q3TvjETGVBvrVr9rhmwUAAAAAAK7Su0fE561Yy0ZR1WPnwEi+3sO1sRD0MbnM+aeha0VEfieH9yZHxDQwHn6zHCv3DpO/AAAAAAAArsY7RsRBdO/WY/n6chZAajdbiz1i6mUnNuqTQtBH4jLnPziMxvVarH2009n+NkyPiInnrVitrUTDdLsAAAAAAMAVebeI+KoTm/Wd6L5I/s1GIy5H82nx3qJ5fRKtr+rTQ9Bv3SXPv/fDWvKZ1Wg9L1ZwKedGxOhF67Pk/Vud6BdrAAAAAAAA3qd3iojHD1Zi+X46iWU+IjGNIPW73XOmXRzE6VE7Gl9ei4290+R1Pw7vb8S1ei1q9WuxdqcdJ6/zLXOzbv/W6cFubH1+LepZ3FyKlVuN6PwyIcG87sXhXiM2Pq1XA87gNFnfjK2bS8X69NibsfJJfuyN747fXufL/dj+S379leWLdqRnPXaMN6fRHbqO4X2dHjRj88ZS9vmlm9ux/6J4o6IfJ3vbsV5sV/tkLba+O6wGpnme/1TH0bye7q8xeSrTVyfRza57I9ovk1N6uhvryfHrn25GJ3l95rQbzVur+fdRq8e1L5Pf6tnku6j/Sycat1ZiKTvH9Hdtxv5BOzn//Bjxsh3rw9dw7zD/YKIMdfnSiLfvJM65D44fJfdS+T2+KL6r5DtvDo8M7J9E+856/v0m+1+6uRW7TyYnv8o1FPfx7tf55yrHHnL4Tfq+WAsAAAAAAFyNy0fEQTd26mtvo8bTZixncWY9jzmjXp/E/o+t2Pk8j1Xre8ex//VKbNxpRvObzVjNAlKy3CierTfr9mf60b27EvXPG9F9mUeewctuNLL9LMXmT0PTbj7bj86j3WwKz0rAeXUYnb1WbN0o1v98HLu3t6K5tx/dn8v148+APN1br+4nNXqMYl+7j7rRfdTMolq6r63HvTh5uJlcXys6B53Y/etqHkDHpojtRfurpVh7cBj9N8nLN/04fLCWbbv09X4eEud5/ufJptlM9jUhNg6edpJzaMRadt3JPfGkE9u3t2OzOKetx3lgy56neGMrOs+L3+p5Jz+/+mrsVka1DuI4vc5k2/bTIs4NTqP7bX7to/fdyffpCMlk/VBEzLxoFZFxKCJOuw+S+6Zd+R4Po5lcw3ZxTy4/KO68F+3YSKPiUXFeyfffLO63rZ+rIbH302Ys1VZi61Evj7jJNewn92t2rsPHHlH+NqsPTRsLAAAAAAC8f5eOiP1HmyPTK/aidTMPIfnoxMkG/9rOt/miUR1ll4aYIuIMP19v1u1Pf9qIem0obpZed2M7235lbMrVfJTXeMA5fpA/63H1m25llF95TqOB6rwIVx5j4+FJZV9x1MgjWBrSKqMOT6P9RfqZ9WgPrU9Hf45Pa1lMdzkSBud5/pOk3/Wk/bw1iO6d9LyWY+3+YR7N3pzG8VEvP59X+7FVH58C9+z8hgJq//HW5N+1HA05Gq+T73XyuR1GI10/OhIxMe0+6D1czdYv3+4U59OP3tFxnKYRNz3+jVpsPqr+ImeBNZ3ut/xJkns2DZhrYyGwvIZzvvsnO/n13C5CMQAAAAAAwHt0yYiYRo/laBy9DVapLCyOhpNRRdxZz6Ynrcqfr5d8fnhk20zbFzHms9HRe7nj+3lUG51yddrz6KZGtXLKzG9miIjTnnlX7mvCaL7xzxxGo16LjZ/Gv4ty2/q3bwPuPM9/kuNv8xF50yNieV7VEFrKjjdpKtSzKUk3opNdavG7Tnwm4FBsfdeI+Cv3wc6TYsWwLAKX5zmsPE49Gv9OX5dT/o6cZ2FawDxTXs/10ZG3AAAAAAAA83epiDg42In62DSbiWyK0zyGjI3MKp0TBc9Gbw0Hnlm2P2d6zUwZYkbC1a/Fo6kRbuQ450W4aceYKSKexbVzlqH9zPP8JynP70IRcVI4Kz9/zpKdS/m7TjzO1UXESd9L+d55S3bvJv83trPX48dNTTv2mfJ6pnweAAAAAABgni4REd9OW3ruMm3E1HlRsL8fW9nnLxgRR7cvQ8u0iHgW4aohZuZ49KEiYnF92/+aNsyzap7nP0l5fpeLiEX8mzJqtKL8XX+DETH/zPb0kbelKfdeadqxz5TXM+XzAAAAAAAA8zR7RHzajOX6dnRfF69HJe+vZLGj+ny+M0UMOTcKDoelWbb/d/F8wdrO5NBShpz/a1fC1czx6ENFxOKZeuc9c3LY+46I5TMXLxcRk/eyKTw3o/OqWDFNGdBGpl/NfdiI2PsxfW/8uY5jziLi5Htz6v1RKq9n0vSvAAAAAAAAczZjRBxE90491n44b+xYP/ZvF8/Km/QMuyKGrD6csI9i2spKJJtl+7PpVKdEnTSAJtuPnv/M8ehDRcTy+uobE58xmI4Sbf/QLf6e7/lP0n+8lW0/Oe7l8muYHBHLZ1qu3DusPKOyNHjSis7z5I9yOtOJz9r8sBExm9o3ea/+VTVMn3nRjtZB+kdy3HPuzan3R6m8nq86Y/cJAAAAAADAvM0WEZ+3Ym1iyBlRxLo0mDSORjYuY8id7lg4On6wkrw3JQZdcPvewzxM1SfElixa1bdif2Tk27SAk48ymxB2fiXCnU03+uo0Tos/p0aiWSJiIr/mZP0n69E86MXgTb5+8Oo42l+vVkZ/zvP8Jyrj3oRzL+XXsBqtNAaOerUfW1lYq8fq39px/Ko42JtB9A4asfZ/5YjUt1PortztVsP0i3ZsZPsYuW/KcxsJ2f3k3lxL108YETjtNxr7XiqOo3kj/9zSF83ovii3GSTHasfWX97+fzn77ZLvazQ45qMyJ/xWhdOfNrL3J8Z0AAAAAACAObtwRBy86kYjjSXXd6Jbxp4pBk9384CTLjd2Yv/l0PZlFKytxNbecfSzCDaI0593YqVWj429kUgy6/bpaLyv0pGQ9Vj9Zv8sgp2mUaq+EmNR881J7BaBan14hOKb02jfytevfndcCZj9n7fzaVPT72KoUJUj8+qfN6Lzczsa94qQOe0Yif7BTh5cR/YVg160shF2I595fRzNz4uRniNLZUTfPM9/qjLuTZk+tp+ca3Hdaw+S365YPayXHDOf/nZkGR1t+SwN2Pl79U83Yvt+M5p3NmPrp8PJIxHP4l491u62Y/+gE7u3N6N5tF+MREzW/60Zu4+L7/ac+6BTjKyt306+jyLaDhukYbI4t+oycr+9PozGX4p9Jd/x/rPT6Pd70X2wFWtFiKx/vh3N+/tjkfH42/RzF5g2FQAAAAAAYA4uFhHPQt7QMuU5eOVortHl7JmGxb7Wv9+P9p21uFaMRLv2+Xa0f5mQmWbdPtOPk0eN2LyxlH22Vr8Wa7d3oztaxCZdVzqqrhypV1nSSFVOnVld3o4e68X+31ajnp7fX1txkj43ctIxsqk0J+8r+56mnVd+kCxsdb/birVP8yC1dGMzGo9O3obCeZ7/r+g/2kz2MWGk4cTrHg19uf4vnWjcWomldJvitzqc8JzEwbNkuy+v5dOHfroRzSfp719e04R9v9iP7ZvpPZDfL50sSqbTil6LjXvtOCzj9kz3wZTRgqfd2L1d3p9LsXKrEZ1nw+m2kP529zdj5ZNyu2Z2Xx7eS87xy2bsP5uYWqP1WbL9zaFnhQIAAAAAALxHMz4TcQ6KYHMWFX/NrNtztQbH2QjV85+T+T6dExF/L7KYOWFqYAAAAAAAgPdEROSdDZLfaOV6Iw4/SOP6/UfE9FmKlalqAQAAAAAA3rOrj4hPdvIo+OMFR67Nuj0fRG9vI1Y/SOj6nUfEF+3Y+KoVPQURAAAAAAC4QlccEftxeH81i4K1L1rRe1OsnmrW7fmQenubsXnVsbe/H9vZcwiXY+dg2jMyP1L9w2jeudizKQEAAAAAAObp6iJi9ly3NPZUl8ZR8f6oWbfnN2HwrBPNH4+vZETi6d762P1R+6Idv4eJbwe/dGL30Un8zrIoAAAAAADwkbj66UwBAAAAAACA37SZI+Lf//73hVsAAAAAAABgkcwUERc1qAmJAAAAAAAALJILR8RFD2lCIgAAAAAAAItCRLwgEREAAAAAAIBFISJekIgIAAAAAADAong/EfF5K9ZqtajV1qL1vFg3weG9dJt0qUfjqFg50SC6d8ptG3FYrL1KIiIAAAAAAACL4r1ExN7D1ahdX47lWi2W7x8Xa8e9jYi1qN87Jw0OurFdbCciAgAAAAAAwPv1HiLicTSv16J2px3t28m/15vJmsnyiLgaq5+dv93gX9vJdsuxnO5XRAQAAAAAAID3av4R8WkzG4G4+agf/cdbkU5VunMwKN6syiPierQe5pGw+bR4o2IQ3bv1qN1uRvMLEREAAAAAAADetzlHxCL41daj/TJ52d+PrXQK0lud6OcbVJQRsf003275wYSxiINu7NRrsfX4ONozRsR//OMf8b///a94NV26zT//+c/i1WQiIgAAAAAAAItivhGxCH5vo2E/9tMpTcuoOOIsIr4stvusFb3ivdLgYCfqta3Y75/OFBG///77ZNta/PnPf47//ve/xdpx6XvpNum2Dx8+LNaOExEBAAAAAABYFHONiPmzC/OpTEvlurUfRvPgcESMYurT1Wg9L97MFCMbsyg5W0Q8PT2NP/7xj9mx//SnP00ckZiuS99Lt/nkk0+yz0wjIgIAAAAAALAo5hgR+9G5lUa+zei8KlalBt3YriXrrzdjdLLS4YgYrzqxORYbD6NRL6PkbBEx9fLly6khcZaAmBIRAQAAAAAAWBTzi4hFBBx//mH5nMR6NI6KVYVKRCwj5M2hKU2PGlE/i5KzR8TUpJA4HBDT934tIKZERAAAAAAAABbF3CJi74e1LMqdt9TvdmNQbJ+qRsSI0731yuvDe+VUpqnLRcTUf/7zn1haWsrOIf23/Dt9FmIaGS9CRAQAAAAAAGBRzCki9qJ1Mw18a7F1vxnNsWUnNq6n71enOh2NiPGyHeu1WqzvpSMDh6cyTV0+IqaGQ+KsATElIgIAAAAAALAo5hMRn7diNY1zd6ojDYcd31/O4t3wMw/HImIZCm914vRpM5Yr0fHdImIqjYZ/+MMfsilMZwmIKRERAAAAAACARTGXiJgHwnrsHExLiInnrVhLQ+PQMw/HI2I5pelWbN9J9ll5vuK7R8RUr9fLRiXOSkQEAAAAAABgUcwlIjbTqUrrO9E9pyG+nfJ0OZpP8zWTIuJZbEyWfFrT0nwi4mWJiAAAAAAAACyKuUTEeq0W9Xu/nvb6jzazOFi/m097OjEinsXG0fUiIgAAAAAAAFyF+TwTcQGIiAAAAAAAACwKEfGCREQAAAAAAAAWhYh4QSIiAAAAAAAAi0JEvCAREQAAAAAAgEVx4YiYWtSQJiACAAAAAACwSGaKiKk0qC3aAgAAAAAAAItk5ogIAAAAAAAA/L6JiAAAAAAAAECFiAgAAAAAAABUiIgAAAAAAABAhYgIAAAAAAAAVIiIAAAAAAAAQIWICAAAAAAAAFSIiAAAAAAAAMCQiP8HHVX/AQAnAocAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NSelectItem DisplayName="Select Item - Prefered Location" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Mont Kiara" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="7">
+                          <x:String>Ampang</x:String>
+                          <x:String>Kajang</x:String>
+                          <x:String>KLCC</x:String>
+                          <x:String>Mont Kiara</x:String>
+                          <x:String>Seri Kembangan</x:String>
+                          <x:String>Shah Alam</x:String>
+                          <x:String>Taman Tun Dr Ismail</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvTextArea="67, 667, 100, 21" CvTextArgument="Mont Kiara" CvType="Text" DesignTimeRectangle="64, 666, 219, 26" DesignTimeScaleFactor="1.5" ElementType="DropDown" FriendlyName="'Mont Kiara'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strLocation' tableRow='7' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='strLocation' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="04eac14f-f630-4b18-9102-70358d379ed2" ImageBase64="" InformativeScreenshot="b110e6f073dd70156a939c06c3319b33.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Agree box" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="67, 724, 23, 23" CvType="CheckBox" DesignTimeRectangle="70, 726, 20, 20" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='agree01' tableRow='9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='agree01' type='checkbox' tag='INPUT' class='' aaname='' /&gt;" Guid="294825f3-210a-4d32-9574-64dc0da7d7c3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADSSURBVEhL7Y+xCoQwEETvq9OIrUV+QC2sbO0CFqb0L0RsUlpaWM4xEhYMOdQDOTh8sMXKzrz4ws38oWBdV0zThHEcTw1vmfnETmCthVLqq2E2hgj6vt8Om6bBMAzR18aGt8wwy44QEWitUVWV367DLDtCRMAXdF3nt+swy46QRyA8gkMewSG/FyRJAmOM367DLDtCRFDXNdI0hXPOfzkPM8yyI0QE8zwjy7LtN/M8R1EUp4a3zDDLjhARkGVZ0LYtyrKMlsWGt8wwG2MnuIObBcAbUnxkc7Qkg+UAAAAASUVORK5CYII=" InformativeScreenshot="8928da0a2ff048d2c047d30e85be347c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Agree PDPA" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="67, 769, 23, 23" CvType="CheckBox" DesignTimeRectangle="70, 771, 20, 20" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='agree02' tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='agree02' type='checkbox' tag='INPUT' class='' aaname='' /&gt;" Guid="1afc4649-b4cc-463c-9ca3-b05c29ba5631" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADSSURBVEhL7Y+xCoQwEETvq9OIrUV+QC2sbO0CFqb0L0RsUlpaWM4xEhYMOdQDOTh8sMXKzrz4ws38oWBdV0zThHEcTw1vmfnETmCthVLqq2E2hgj6vt8Om6bBMAzR18aGt8wwy44QEWitUVWV367DLDtCRMAXdF3nt+swy46QRyA8gkMewSG/FyRJAmOM367DLDtCRFDXNdI0hXPOfzkPM8yyI0QE8zwjy7LtN/M8R1EUp4a3zDDLjhARkGVZ0LYtyrKMlsWGt8wwG2MnuIObBcAbUnxkc7Qkg+UAAAAASUVORK5CYII=" InformativeScreenshot="80ea999db71634afcc1f5583c2356ed1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Submit button" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nazattdi.com/register_Nazattdi22.html" CvElementArea="61, 837, 91, 35" CvTextArea="72, 843, 67, 19" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="64, 839, 86, 32" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='registerme' tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='registerme' type='button' tag='INPUT' class='' aaname='Submit' check:text='Submit' /&gt;" Guid="91e0f46d-9421-4f58-b2b7-0a306d27d2bd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAkCAYAAAAJgC2zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQmSURBVGhD7Zq/a+NKEMf9V6g1XBG4xpVVxmA4wzWCwDNcEcyBcWkCQbwUwRwY8YqgFIdJceBUvs6BA6UJOPDAKR74wYFCSGFI4eIKQQr/Cd+b0S+v5HXiOIoud+zCF5LZ0Xr3o9HsrFABquXSFOicmgKdU0uAnkwmsG0bBwcHSs8QM2SWYotBc8fx8TFubm4wn8+VniFmyCxF2DFovgsKcnZilsw0ajFoDnnZBUqbi5lGTYF+QSnQOUmBzknZgr6fwjlqwSgXUSgUSBq2tg20jhxM7yX+T9DokMfrYCTpy15T9Hckvzd10DkZC37rKzvQt0O0yiHc9y2YXQtW10Tr/RY0hl424dxJrltTvx70CB1ex+FI8FtfGYH24OxrNDEdnUtvqX/2zYROk9SaQ8xSfesqX9AyvQrQ4SR2+phK+2cY7DIoA/1bWf/jUqB9hZOo0nFT2j+H+8VA4Y0O+9/IFj6esptz24dB4xmn09gWg74bwW7WUOTf07ZQa9pkS17v+9K4bui7pfG1Rei7VuB772J42ID+hu2U6v7qwLkWx0iljssO/c3/LyTObR1lBDpKHQUUdywMrlx4j25+m4DWodM+4P/GuYPhSRsVhqjVMRCeFN+3Wke9rKHy0fZ9B10juDnvTJgfNIIe2o8IONvLFsbh9Uug7yZwzm002I/Gc+i68e1yinxIGYEm/aCo3g5gB6IIqjbQPhlgfC2b1CagCyj9PYIn+n7voUZ2bd+J7ZGv3hUrBAqGvcCu7S18We7nCtlLsK4iWwq0r1eROiLN4J7Zi0pDkLbdRv9/EfgmoGvofU/5xgDbcDzRt7LkOz2l9EXjmhdJ+/zC9O2dy8j26kEL8gj61RD9bgu1t2GkJx7xTUCLC1/Iz/9CRAa+yxtvAJrsiXxMCnPw7wk6oRktXvcXU/onepyzAx1FagRqlW8MOl35/C6g3dM6bTRijpPIc9DmicZgHwBNebfyBNBBjl2kij8WtHdu+jm5lNh8UrobBLs2bWaBLVxMtQc35et9a/sLXwYtq8OjGj2do/9A0PP5GJZ//NZhni3gxLqfYrjPqaNEi4k2xGgTa2CQqINd9Kn8koOmSoIWKlYMHkHi8qwk2F8UdBwoT1NGoEnXFLH+AYAqjLcVNPb4XYcFs2nEB4Ma5ec0pBJPvtyA/dWB87WH9k4R2of6ihytQdOE2phqYL+OLhOQH4txXwa0i16VbLSh22e/so5mUeSOTjtoVPXgcMCi06DRpAPGfzPpNbMLKgffhW/7yLfRHWEWRo80R9Npz9oNx6eTYf1wgIkAOeEr2FjPA02BcWWjHlZQ2qenvcXLFrTSSinQOUmBzkkKdE5SoHOSAp2TFOicJAWtPgnLVis/CVMfOWYnZrjyI0du3MF3gUNeaXMxQxEytwRo1V6qAT8Bfn5ptSSI+bUAAAAASUVORK5CYII=" InformativeScreenshot="86e7f14be2a3d0de8223f11805e01161.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="1" Y="1" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Reload" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7296ba56-e7b7-4612-9831-8b20113f1a02" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="123, 76, 32, 32" CvType="Icon" DesignTimeRectangle="119, 72, 42, 43" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='Register Your Interest - Memory usage - 30.1 MB - Google Chrome' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Register Your Interest - Memory usage - 30.1 MB - Google Chrome' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="2680905d-4588-46df-9cf4-0ea97bf9f0da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAvCAYAAACc5fiSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKXSURBVGhD7ZfLSxtRFIf7h8QHKIjPhS/0H9C9DxTEjSC4ceNS1J2IDwQXulAQwUfSmqTGhe0isbEppdAGqi1RbGIaSkyFQoutjULiac5hUtP0JE5n9EDh/uAj5N5z534DmdwzD6wWC/yPKHFplLg0SlwaJS6NEpdGiUtzL+L28nJ40tICT1tbwVFVxdZk8rCkhB3Px52Juxoa4Hh5Gb6Hw5Cdn7EYfHQ66Way1+12d8P+xMRf47dhWtxWWAhvx8cheXmpaeZO8uoK/KOjv9fudnXR2LvZ2T+uqQdT4viT+OL3a1oA3w4PwT82Bu6ODnBUV4O9ogLc7e0QWFiA+NmZVgUQstngWU8PJOJx+i4rXlAAMa+XNsYcTE/TGFub4lFpKd0AF1HxV0ND2rYAr4eH2RqO4Pq6tuomYuK2oiK4iEZp0+DaGlvD4evvh+tkktZlRkwcf58YlHDW1LA12Tzv64PrRILWZUdMHP/2MJ99PnY+G29vb05pjJj4p50d2vBoaYmdl8CQeGxvj8Tfz82x8xIYEo+4XCT+YXWVnZfAkHhgfp7E8fDh5vWwVV8P201N7JweDIm729pIHLNVV8fW5AN7FjzqL05P2Xk9GBLHE/L85ITEQ1YrX5MDW3ExtQaY81CIrdGDMfEULwcHaXPMm5ERtoYjuLGhrQI6kLgaPRgWR6Iej6aQ6lVmZtiaNJtlZRC227VqoLOAq9OLKfHs7vBrIEBtKz4D+ALhamyEFwMDJJzuBDFhhyNvQ6YHU+II9uP7k5P0sN0WPD2PFhfZ6/wrpsXTbDc3w/HKCvyIRDTNm+CDfDA1BY9ra9m1Rrgz8UzslZX0vunp7KRPrsYs9yIugRKXRolLo8SlUeLSKHFplLgsFvgFqfHmDc4OlscAAAAASUVORK5CYII=" InformativeScreenshot="b934e983e6fe2550c1f7e43a2a6c95b3.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Register Your Interest - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="8551cd315f5e27a57824d7df76068753.jpg" Selector="&lt;html app='chrome.exe' title='Register Your Interest' /&gt;" Title="Register Your Interest" Url="https://www.nazattdi.com/register_Nazattdi22.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
